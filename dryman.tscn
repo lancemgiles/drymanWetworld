@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://dycsioo5ra5m"]
+
+[ext_resource type="Script" path="res://dryman.gd" id="1_ri2nj"]
+[ext_resource type="Texture2D" uid="uid://ccg1si2gistqi" path="res://art/dryman-bald-back.png" id="2_iiccp"]
+[ext_resource type="Texture2D" uid="uid://3okq7fck3lu" path="res://art/dryman-bald-front.png" id="3_gb1a6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k0w0q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_iiccp")
+}],
+"loop": true,
+"name": &"back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_gb1a6")
+}],
+"loop": true,
+"name": &"front",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ddwge"]
+radius = 38.0
+height = 100.0
+
+[node name="dryman" type="Area2D"]
+script = ExtResource("1_ri2nj")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_k0w0q")
+animation = &"front"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 0)
+shape = SubResource("CapsuleShape2D_ddwge")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
