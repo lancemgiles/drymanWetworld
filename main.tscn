@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://syxxwsow2dgc" path="res://mob.tscn" id="2_uiol1"]
 [ext_resource type="Texture2D" uid="uid://dimtahclffrxc" path="res://art/blue-green-gradient-480x720.png" id="3_n6nr3"]
 [ext_resource type="PackedScene" uid="uid://dv10tsqaab8a2" path="res://hud.tscn" id="4_qt2y2"]
-[ext_resource type="AudioStream" uid="uid://c6ea6ey6wvj3e" path="res://art/gameover.wav" id="6_0pdcd"]
 [ext_resource type="AudioStream" uid="uid://diaacody5r7mq" path="res://art/brown.ogg" id="6_xkeqq"]
+[ext_resource type="AudioStream" uid="uid://cl57ghm2je4ac" path="res://art/snuffed.wav" id="7_qujf7"]
 [ext_resource type="PackedScene" uid="uid://dycsioo5ra5m" path="res://dryman.tscn" id="7_unhom"]
 
 [sub_resource type="Curve2D" id="Curve2D_h3dxm"]
@@ -19,7 +19,6 @@ script = ExtResource("1_83ucj")
 mob_scene = ExtResource("2_uiol1")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-visible = false
 offset_right = 480.0
 offset_bottom = 720.0
 texture = ExtResource("3_n6nr3")
@@ -51,7 +50,7 @@ stream = ExtResource("6_xkeqq")
 autoplay = true
 
 [node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_0pdcd")
+stream = ExtResource("7_qujf7")
 
 [connection signal="hit" from="dryman" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

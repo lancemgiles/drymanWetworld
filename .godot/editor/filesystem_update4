@@ -1,6 +1,4 @@
-res://dryman.tscn
-res://mob.tscn
 res://main.tscn
+res://mob.tscn
 res://hud.tscn
-res://hud.gd
-res://main.gd
+res://dryman.tscn
