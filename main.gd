@@ -19,7 +19,7 @@ func new_game():
 	$dryman.start($StartPosition.position)
 	$StartTimer.start()
 	$HUD.update_score(score)
-	$HUD.show_message("get riddy")
+	$HUD.show_message("starting...")
 
 func _on_score_timer_timeout():
 	score += 1

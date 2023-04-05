@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dv10tsqaab8a2"]
 
 [ext_resource type="Script" path="res://hud.gd" id="1_4ut0s"]
-[ext_resource type="FontFile" uid="uid://cllc3dob8xlt" path="res://fonts/Xolonium-Regular.ttf" id="2_3c4gw"]
+[ext_resource type="FontFile" uid="uid://6mhuhlv00etp" path="res://fonts/FiraMono-Medium.ttf" id="2_vs13v"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_h314h"]
 action = &"start_game"
@@ -21,7 +21,7 @@ offset_right = 22.5
 offset_bottom = 81.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_3c4gw")
+theme_override_fonts/font = ExtResource("2_vs13v")
 theme_override_font_sizes/font_size = 64
 text = "0"
 horizontal_alignment = 1
@@ -40,7 +40,7 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_3c4gw")
+theme_override_fonts/font = ExtResource("2_vs13v")
 theme_override_font_sizes/font_size = 64
 text = "dryman, wetworld"
 horizontal_alignment = 1
@@ -59,7 +59,7 @@ offset_right = 24.0
 offset_bottom = -112.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("2_3c4gw")
+theme_override_fonts/font = ExtResource("2_vs13v")
 shortcut = SubResource("Shortcut_fsrqg")
 text = "start"
 
