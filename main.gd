@@ -3,9 +3,12 @@ extends Node
 @export var mob_scene: PackedScene
 var score
 
+func _input(event):
+	if event.is_action_pressed("quit"):
+		get_tree().quit()
+
 func _ready():
 	$Music.play()
-
 
 func game_over():
 	$ScoreTimer.stop()
@@ -44,6 +47,3 @@ func _on_mob_timer_timeout():
 	mob.linear_velocity = velocity.rotated(direction)
 	
 	add_child(mob)
-	
-
-

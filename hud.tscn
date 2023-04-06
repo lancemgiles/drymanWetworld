@@ -63,6 +63,25 @@ theme_override_fonts/font = ExtResource("2_vs13v")
 shortcut = SubResource("Shortcut_fsrqg")
 text = "start"
 
+[node name="Credits" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -240.0
+offset_top = -48.0
+offset_right = 240.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_vs13v")
+theme_override_font_sizes/font_size = 16
+text = "a sky puddle instustries production"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="MessageTimer" type="Timer" parent="."]
 wait_time = 2.0
 one_shot = true

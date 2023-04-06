@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://syxxwsow2dgc"]
 
 [ext_resource type="Script" path="res://mob.gd" id="1_nudfu"]
-[ext_resource type="Texture2D" uid="uid://ccoq02cd1qirf" path="res://art/bubble.png" id="2_6c04e"]
+[ext_resource type="Texture2D" uid="uid://j1kdg5yfnwki" path="res://art/bubble-alt1.png" id="2_gsce0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iy0yj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_6c04e")
+"texture": ExtResource("2_gsce0")
 }],
 "loop": true,
 "name": &"swim",
@@ -28,6 +28,7 @@ metadata/_edit_group_ = true
 position = Vector2(0, -3)
 sprite_frames = SubResource("SpriteFrames_iy0yj")
 animation = &"swim"
+frame_progress = 0.987494
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 3)

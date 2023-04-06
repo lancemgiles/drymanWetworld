@@ -1,18 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://dycsioo5ra5m"]
+[gd_scene load_steps=6 format=3 uid="uid://dycsioo5ra5m"]
 
 [ext_resource type="Script" path="res://dryman.gd" id="1_ri2nj"]
-[ext_resource type="Texture2D" uid="uid://dmradrd1t2mfp" path="res://art/dryman-bald-back-alt1.png" id="2_0mgk4"]
-[ext_resource type="Texture2D" uid="uid://ccg1si2gistqi" path="res://art/dryman-bald-back.png" id="2_iiccp"]
-[ext_resource type="Texture2D" uid="uid://3okq7fck3lu" path="res://art/dryman-bald-front.png" id="3_gb1a6"]
+[ext_resource type="Texture2D" uid="uid://b1fuhdrd33qqm" path="res://art/dryman-bald-back-alt2.png" id="2_ev7kw"]
+[ext_resource type="Texture2D" uid="uid://s2qvftfw8udx" path="res://art/dryman-bald-front-alt2.png" id="3_8ihj3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k0w0q"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_0mgk4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_iiccp")
+"texture": ExtResource("2_ev7kw")
 }],
 "loop": true,
 "name": &"back",
@@ -20,7 +16,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_gb1a6")
+"texture": ExtResource("3_8ihj3")
 }],
 "loop": true,
 "name": &"front",
@@ -36,6 +32,7 @@ script = ExtResource("1_ri2nj")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_k0w0q")
 animation = &"back"
 
