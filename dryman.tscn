@@ -32,6 +32,7 @@ script = ExtResource("1_ri2nj")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_k0w0q")
 animation = &"back"
