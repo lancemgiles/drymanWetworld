@@ -1,7 +1,4 @@
-res://mob.tscn
 res://main.tscn
+res://mob.tscn
 res://hud.tscn
 res://dryman.tscn
-res://hud.gd
-res://main.gd
-res://notes.txt
